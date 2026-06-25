@@ -1,3 +1,47 @@
+<a href="./" class="apple-back-btn">
+    <span class="arrow">←</span> กลับหน้าหลัก
+</a>
+
+<style>
+    .apple-back-btn {
+        /* จัดตำแหน่งให้ลอยอยู่มุมซ้ายบนสุดเสมอ */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+        
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #1d1d1f;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        
+        transition: all 0.2s ease;
+    }
+
+    .apple-back-btn:hover {
+        transform: translateY(-1px);
+        background-color: #ffffff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .apple-back-btn .arrow {
+        transition: transform 0.2s ease;
+    }
+    
+    .apple-back-btn:hover .arrow {
+        transform: translateX(-2px);
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
